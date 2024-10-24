@@ -11,6 +11,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setWindowTitle("Just Do It!");
+    // 在构造函数中添加这行代码
+    this->setStyleSheet("background-image: url(:/images/2.jpg);");
+    ui->lineEdit->setStyleSheet("color:darkblak");
+    ui->lineEdit->setFont(QFont("Timers",20));
+
+
 
    // QFile file(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+"\\ToDoFile.txt");
     QFile file(path);
